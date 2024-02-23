@@ -1,0 +1,30 @@
+.productCard{ 
+    width: 250px;
+}
+
+.productCard_img{
+    position: relative;
+    cursor: pointer;
+}
+
+.productCard_img img:last-child{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.productCard_img:hover img:first-child{
+    opacity: 0;
+}
+.productCard_img:hover img:last-child{
+    opacity: 1;
+}
+
+
+.productButton{
+    display: flex;
+    justify-content: space-between;
+}
